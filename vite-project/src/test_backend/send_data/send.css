@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box  ;
+}
+
+:root {
+  --bg: rgb(18, 18, 18);
+  --surface: rgb(26, 26, 26);
+  --surface-2: rgb(32, 32, 32);
+  --green: rgb(0, 122, 55);
+  --green-dim: rgba(0, 180, 80, 0.07);
+  --text: rgb(220, 220, 220);
+  --text-muted: rgb(100, 100, 100);
+  --border: rgba(255, 255, 255, 0.06);
+  --radius: 6px;
+}
+
+body {
+  background-color: var(--bg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 40px;
+  width: 100vw;
+  height: 100vh;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: var(--text);
+}
+
+.general_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  gap: 20px;
+  background-color: var(--surface);
+  height: 400px;
+  width: 750px;
+  border-radius: 4px;
+}
+
+.general_container form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.general_container form input {
+  width: 250px;
+  height: 33px;
+  padding: 5px;
+  background-color: var(--surface-2);
+  border: 2px solid var(--surface-2);
+  border-radius: 2px;
+  color: var(--text);
+}
+
+.general_container form button {
+  background-color: var(--green);
+  height: 33px;
+  color: var(--text);
+  border: none;
+  border-radius: 2px;
+  transition: 0.4s all;
+}
+
+.general_container form button:hover {
+  background-color: var(--text);
+  color: var(--green);
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.post {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
