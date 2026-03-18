@@ -1,8 +1,8 @@
-import GetAndFetch from './test_backend/get_and_fetch/GetAndFetch'
+import CommentSystem from './comment_system_exercise/CommentSystem'
 
 function App() {    
   return (
-   <GetAndFetch/>
+   <CommentSystem/>
   )
 }
 
