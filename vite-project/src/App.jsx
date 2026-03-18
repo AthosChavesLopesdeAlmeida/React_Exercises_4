@@ -1,8 +1,8 @@
-import SendData from "./test_backend/send_data/SendData"
-function App() {
-    
+import GetAndFetch from './test_backend/get_and_fetch/GetAndFetch'
+
+function App() {    
   return (
-   <SendData/>
+   <GetAndFetch/>
   )
 }
 

@@ -1,3 +1,4 @@
+import './delete.css'
 import { useState, useEffect } from "react"
 
 const DeleteFetch = () => {
@@ -38,15 +39,15 @@ const DeleteFetch = () => {
   }
 
   return (
-    <div>
+    <div className='general_div'>
       {isLoading ? (
         <h2>Loading...</h2>
       ) : error ? (
         <h2>Error {error}</h2>
       ) : (
-        <div>
+        <div className='posts_div'>
           {posts.map((post) => (
-            <div key={post.id}>
+            <div key={post.id} className='post'>
               <h3>{post.title}</h3>
               <p>{post.body}</p>
               <button onClick={() => handleDelete(post.id)}>Delete</button>
