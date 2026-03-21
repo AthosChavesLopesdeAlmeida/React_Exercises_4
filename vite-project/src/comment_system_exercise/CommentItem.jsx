@@ -1,3 +1,4 @@
+import './system.css'
 import React from 'react'
 
 const CommentItem = ({comment, handleDelete}) => {

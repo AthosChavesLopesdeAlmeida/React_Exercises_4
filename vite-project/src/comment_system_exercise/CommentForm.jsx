@@ -1,3 +1,4 @@
+import './system.css'
 import { useContext, useState } from 'react'
 import CommentContext from './CommentContext'
 

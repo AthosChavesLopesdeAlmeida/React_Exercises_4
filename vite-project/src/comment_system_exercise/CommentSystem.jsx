@@ -1,3 +1,4 @@
+import './system.css'
 import PostCard from './PostCard'
 import { useContext } from 'react'
 import CommentList from './CommentList'
