@@ -1,8 +1,8 @@
 export default function Home() {
   return (
     <main>
-      <h1>First project with next.js</h1>
-      <p>Just testing</p>
+      <h1>Home</h1>
+      <p>Essa é a página home</p>
     </main>
   );
 }
