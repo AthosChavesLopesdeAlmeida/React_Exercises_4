@@ -68,3 +68,5 @@ export const ShopProvider = ({ children }: { children: React.ReactNode }) => {
     </ShopContext.Provider>
   )
 }
+
+export { ShopContext }
