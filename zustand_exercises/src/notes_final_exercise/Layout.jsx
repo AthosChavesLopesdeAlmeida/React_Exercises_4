@@ -1,3 +1,4 @@
+import './notes.css'
 import Sidebar from './Sidebar'
 import Toolbar from './Toolbar'
 import NoteEditor from './NoteEditor'

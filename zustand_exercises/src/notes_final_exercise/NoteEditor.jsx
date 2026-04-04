@@ -6,6 +6,7 @@ const NoteEditor = () => {
   )
   const editNote = useNotesStore((state) => state.editNote)
   const removeNote = useNotesStore((state) => state.removeNote)
+  const setActiveNote = useNotesStore((state) => state.setActiveNote)
 
   if (!activeNote) {
     return <p>Select a note, please</p>
@@ -21,6 +22,7 @@ const NoteEditor = () => {
       onChange={(e) => editNote(activeNote.id, {content: e.target.value})}/>
 
       <button onClick={() => removeNote(activeNote.id)}>Remove note</button>
+      <button onClick={() => setActiveNote(null)}>Close editor</button>
     </div>
   )
 }

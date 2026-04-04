@@ -1,5 +1,5 @@
+import './notes.css'
 import { useUIStore } from "./notesStore"
-
 
 const Toolbar = () => {
   const toggleTheme = useUIStore((state) => state.toggleTheme)
