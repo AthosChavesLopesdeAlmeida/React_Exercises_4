@@ -1,15 +1,16 @@
+import { useUIStore } from "./notesStore"
 import { useNotesStore } from "./notesStore"
 import { useSearchStore } from "./notesStore"
 
 const Sidebar = () => {
+  const toggleSidebar = useUIStore((state) => state.toggleSidebar)
+  const notes = useNotesStore((state) => state.notes)
   const query = useSearchStore((state) => state.query)
   const setQuery = useSearchStore((state) => state.setQuery)
   const setActiveNote = useNotesStore((state) => state.setActiveNote)
   const addNote = useNotesStore((state) => state.addNote)
-  const filteredNotes = useNotesStore((state) =>
-    state.notes.filter((note) =>
-      note.title.toLowerCase().includes(query.toLowerCase())
-    )
+  const filteredNotes = notes.filter((note) =>
+    note.title.toLowerCase().includes(query.toLowerCase())
   )
 
 
@@ -31,6 +32,7 @@ const Sidebar = () => {
             </li>
           ))}
         </ul>
+        <button onClick={() => toggleSidebar()}>Close sidebar</button>
       </section>
     </nav>
   )
