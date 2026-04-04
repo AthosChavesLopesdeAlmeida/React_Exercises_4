@@ -1,10 +1,10 @@
-import FullLayout from "./themes_exercise/FullLayout"
+import Layout from "./notes_final_exercise/Layout"
 
 function App() {
 
   return (
     <>
-    <FullLayout/>
+    <Layout/>
     </>
   )
 }
