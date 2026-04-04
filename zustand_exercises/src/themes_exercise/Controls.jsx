@@ -7,8 +7,8 @@ const Controls = () => {
 
   return (
     <div>
-      <button onClick={() => toggleModal}>Toggle modal</button>
-      <button onClick={() => toggleTheme}>Toggle theme</button>
+      <button onClick={toggleModal}>Toggle modal</button>
+      <button onClick={toggleTheme}>Toggle theme</button>
     </div>
   )
 }
