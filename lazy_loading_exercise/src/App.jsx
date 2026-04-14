@@ -1,9 +1,9 @@
-import Final4 from './error_boundary_exercise/Final4'
+import Final_5 from "./final_exercise/Final_5"
 
 function App() {
   return (
     <>
-      <Final4/>
+      <Final_5/>
     </>
   )
 }
