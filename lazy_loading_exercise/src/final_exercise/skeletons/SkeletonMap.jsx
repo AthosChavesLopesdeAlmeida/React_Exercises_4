@@ -1,3 +1,4 @@
+import './skeleton.css'
 const SkeletonMap = () => {
   return (
     <div className="skeleton-wrapper">

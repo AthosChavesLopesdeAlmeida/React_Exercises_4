@@ -1,3 +1,4 @@
+import './skeleton.css'
 const SkeletonTable = () => {
   return (
     <div className="skeleton-wrapper">

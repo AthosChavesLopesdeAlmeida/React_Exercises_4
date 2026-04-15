@@ -1,3 +1,4 @@
+import './skeleton.css'
 const SkeletonCalendar = () => {
   return (
     <div className="skeleton-wrapper">

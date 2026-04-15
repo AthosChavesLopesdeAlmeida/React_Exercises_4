@@ -1,3 +1,4 @@
+import './skeleton.css'
 const SkeletonGraphics = () => {
   return (
     <div className="skeleton-wrapper">

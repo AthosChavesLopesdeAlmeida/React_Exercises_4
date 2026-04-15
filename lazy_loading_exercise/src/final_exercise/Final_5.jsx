@@ -1,3 +1,4 @@
+import './components/components.css'
 const Map = React.lazy(() => import('./components/Map'))
 const Table = React.lazy(() => import('./components/Table'))
 const Editor = React.lazy(() => import('./components/Editor'))

@@ -1,3 +1,4 @@
+import './skeleton.css'
 const SkeletonEditor = () => {
   return (
     <div className="skeleton-wrapper">
